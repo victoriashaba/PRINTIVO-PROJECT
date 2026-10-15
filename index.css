@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #183d6b;
+  background: #fdfcf8;
+}
+.top-nav {
+  height: 55px;
+  background: #f4f6f5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 13px;
+}
+
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.help b {
+  color: #087bc1;
+  font-size: 12px;
+}
+
+.whatsapp {
+  color: green;
+  font-size: 25px;
+}
+
+.country {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+main {
+  padding-top: 55px;
+  background: #ffffff;
+}
+.main-nav {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 7%;
+
+  background: #fffbeb;
+}
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #e84b91;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #183d6b;
+  font-size: 14px;
+}
+
+.signin {
+  color: #e2478a !important;
+}
+
+.cart {
+  font-size: 20px;
+}
+.hero {
+  height: 530px;
+  background: rgb(254, 254, 234);
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 50px 7%;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 55%;
+  font-weight: bolder;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: #234f83;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #748297;
+  margin-bottom: 55px;
+}
+
+.hero h4 {
+  margin-bottom: 12px;
+}
+
+.search {
+  width: 620px;
+  height: 65px;
+
+  display: flex;
+
+  background: white;
+  border: 1px solid #eeeeee;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.search button {
+  width: 65px;
+  border: none;
+  background: white;
+  font-size: 30px;
+}
+.hand-image {
+  position: absolute;
+  right: 0%;
+  top: 80px;
+  width: 600px;
+  height: 380px;
+  background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/q_auto,f_auto/v1623764552/printivo/Card3_n9kqin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.products,
+.categories {
+  padding: 70px 7%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.heading h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #234f83;
+}
+
+.heading a {
+  color: #777;
+  text-decoration: none;
+}
+.product-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #eeeeee;
+}
+
+.product-picture {
+  height: 220px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  min-height: 42px;
+}
+
+.product-info small,
+.category-info small {
+  display: block;
+  color: #777;
+  margin-top: 18px;
+}
+
+.product-info h4,
+.category-info h4 {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+.product-info h4 span,
+.category-info h4 span {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.product button,
+.category button {
+  border: none;
+  background: #e74d91;
+  color: white;
+
+  padding: 12px 15px;
+
+  cursor: pointer;
+}
+.business-card {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg");
+}
+.round-sticker {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1656003107_social-media--15.png");
+}
+
+.mug {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1661456358_social-media--16.png");
+}
+
+.postcard {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1439790190_postcard.jpg");
+}
+
+.banner {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1446183154_big%20rollup%20banner.png");
+}
+
+.poster {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1775484810_IMG-20260406-WA0011.jpg");
+}
+
+.brochure {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1473167305_trifold-brochure-printing.png");
+}
+
+.id-card {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1456215784_12.png");
+}
+
+.tshirt {
+  background-image: url(https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1485151940_White-tshirt.png);
+}
+
+.paper-bag {
+  background-image: url(https://printivo.s3-us-west-2.amazonaws.com/files/temp/1542204266-a4-paperbag-5.png);
+}
+
+.courier {
+  background-image: url(https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1607424257_63f28e7a-da1d-4685-a297-964e186a2170.jpeg);
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.category {
+  background: white;
+  border: 1px solid #eee;
+}
+
+.category-picture {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-info {
+  padding: 20px;
+}
+
+.greeting {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1473159158_Christmas-card-for-this-wonderful-season.png");
+}
+.flyers {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778057068_WhatsApp-Image-2026-05-06-at-9.44.04-AM.jpeg");
+}
+.stickers {
+  background-image: url("https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1473165427_stickers.png");
+}
+.trusted {
+  padding: 80px 7%;
+  background: #f7f7f4;
+}
+
+.trusted h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.trusted p {
+  color: #666;
+  font-size: 16px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.brands-image {
+  height: 130px;
+  margin-top: 35px;
+
+  background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1618815420/printivo/Group_61_h8vxko.png");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.send-message {
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+
+  background: #e72f8b;
+  color: white;
+
+  padding: 15px 25px;
+
+  cursor: pointer;
+
+  border-radius: 0 5px 0 0;
+
+  z-index: 2000;
+}
+@media (max-width: 900px) {
+  .top-left {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hand-image {
+    opacity: 0.3;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
